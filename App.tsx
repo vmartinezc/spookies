@@ -1,7 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { StatusBar } from 'expo-status-bar'
+import { StyleSheet } from 'react-native'
 import LandingScreen from './screens/LandingScreen'
 import FeedScreen from './screens/FeedScreen'
 import AddScreen from './screens/AddScreen'
@@ -12,7 +12,7 @@ const Tab = createBottomTabNavigator()
 
 function MainTabs() {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator screenOptions={{ tabBarStyle: { backgroundColor: '#4a3d6b' } }}>
       <Tab.Screen name="Feed" component={FeedScreen} />
       <Tab.Screen name="Add" component={AddScreen} />
     </Tab.Navigator>
