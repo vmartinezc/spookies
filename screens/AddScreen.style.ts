@@ -1,0 +1,129 @@
+import { StyleSheet } from 'react-native'
+
+export const WIN = {
+  bg: '#c0c8d0',
+  light: '#e8eef4',
+  darker: '#3a4a5a',
+  dark: '#6b7a8d',
+  white: '#f0f4f8',
+  purple: '#7b6b9e',
+  purpleDark: '#4a3d6b',
+  teal: '#4a8b8b',
+  tealLight: '#a8d4d4',
+  text: '#1a1a2e',
+}
+
+export const FONT = 'VT323'
+
+export const s = StyleSheet.create({ 
+  
+  bg: { flex: 1, backgroundColor: WIN.bg },
+  container: { padding: 12 },
+  window: {
+    borderTopWidth: 2, borderTopColor: WIN.light,
+    borderLeftWidth: 2, borderLeftColor: WIN.light,
+    borderRightWidth: 2, borderRightColor: WIN.darker,
+    borderBottomWidth: 2, borderBottomColor: WIN.darker,
+    backgroundColor: WIN.bg,
+  },
+  titleBar: {
+    backgroundColor: WIN.purpleDark,
+    padding: 6,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  titleBarText: { color: '#fff', fontFamily: FONT, fontSize: 18, letterSpacing: 1 },
+  titleBtns: { flexDirection: 'row', gap: 2 },
+  titleBtn: {
+    width: 18, height: 18,
+    backgroundColor: WIN.bg,
+    borderTopWidth: 1.5, borderTopColor: WIN.light,
+    borderLeftWidth: 1.5, borderLeftColor: WIN.light,
+    borderRightWidth: 1.5, borderRightColor: WIN.darker,
+    borderBottomWidth: 1.5, borderBottomColor: WIN.darker,
+    alignItems: 'center', justifyContent: 'center',
+  },
+  titleBtnText: { fontFamily: FONT, fontSize: 12, color: WIN.text },
+  formBody: { padding: 12, gap: 12 },
+  fieldGroup: {
+    borderTopWidth: 1.5, borderTopColor: WIN.darker,
+    borderLeftWidth: 1.5, borderLeftColor: WIN.darker,
+    borderRightWidth: 1.5, borderRightColor: WIN.light,
+    borderBottomWidth: 1.5, borderBottomColor: WIN.light,
+    backgroundColor: WIN.white,
+    padding: 10,
+    paddingTop: 16,
+    gap: 4,
+  },
+  fieldLabel: {
+    fontFamily: FONT, fontSize: 13,
+    color: WIN.purpleDark, letterSpacing: 1,
+    marginBottom: 2,
+  },
+  fieldInput: {
+    fontFamily: FONT, fontSize: 18,
+    color: WIN.text, letterSpacing: 1,
+    borderBottomWidth: 1.5, borderBottomColor: WIN.dark,
+    paddingVertical: 2,
+  },
+  notesInput: { minHeight: 48, borderBottomWidth: 0 },
+  radioRow: {
+    flexDirection: 'row', alignItems: 'center',
+    gap: 8, padding: 4,
+    borderWidth: 1.5, borderColor: 'transparent',
+  },
+  radioRowSelected: {
+    backgroundColor: '#dde8e8',
+    borderColor: WIN.teal,
+  },
+  radioDot: {
+    width: 14, height: 14, borderRadius: 7,
+    borderTopWidth: 1.5, borderTopColor: WIN.darker,
+    borderLeftWidth: 1.5, borderLeftColor: WIN.darker,
+    borderRightWidth: 1.5, borderRightColor: WIN.light,
+    borderBottomWidth: 1.5, borderBottomColor: WIN.light,
+    backgroundColor: WIN.white,
+    alignItems: 'center', justifyContent: 'center',
+  },
+  radioDotInner: {
+    width: 6, height: 6, borderRadius: 3,
+    backgroundColor: WIN.purpleDark,
+  },
+  radioLabel: { fontFamily: FONT, fontSize: 18, letterSpacing: 1, flex: 1, color: WIN.text },
+  ghostIcons: { fontSize: 16 },
+  btnRow: {
+    flexDirection: 'row', gap: 8,
+    justifyContent: 'flex-end',
+    padding: 12, paddingTop: 4,
+  },
+  btn: {
+    paddingHorizontal: 18, paddingVertical: 4,
+    backgroundColor: WIN.bg,
+    borderTopWidth: 2, borderTopColor: WIN.light,
+    borderLeftWidth: 2, borderLeftColor: WIN.light,
+    borderRightWidth: 2, borderRightColor: WIN.darker,
+    borderBottomWidth: 2, borderBottomColor: WIN.darker,
+    minWidth: 80, alignItems: 'center',
+  },
+  btnPrimary: {
+    backgroundColor: WIN.purple,
+    borderTopColor: '#a090c8', borderLeftColor: '#a090c8',
+    borderRightColor: WIN.purpleDark, borderBottomColor: WIN.purpleDark,
+  },
+  btnText: { fontFamily: FONT, fontSize: 18, color: WIN.text },
+  btnPrimaryText: { color: '#fff' },
+  statusBar: {
+    borderTopWidth: 1.5, borderTopColor: WIN.darker,
+    padding: 4, paddingHorizontal: 8,
+    flexDirection: 'row',
+  },
+  statusCell: {
+    borderTopWidth: 1, borderTopColor: WIN.darker,
+    borderLeftWidth: 1, borderLeftColor: WIN.darker,
+    borderRightWidth: 1, borderRightColor: WIN.light,
+    borderBottomWidth: 1, borderBottomColor: WIN.light,
+    paddingHorizontal: 6, paddingVertical: 1,
+  },
+  statusText: { fontFamily: FONT, fontSize: 13, color: WIN.dark, letterSpacing: 1 },
+})
