@@ -8,9 +8,9 @@ import {
 } from 'react-native'
 import {s} from './AddScreen.style'
 import { useAddScreen } from '../hooks/useAddScreen'
+import { GHOST } from './Theme.style'
 
 const SPOOKS = [1, 2, 3, 4, 5] as const
-const GHOST = '👻'
 
 export default function AddScreen({ navigation }: any) {
  const {
@@ -29,7 +29,7 @@ export default function AddScreen({ navigation }: any) {
       <View style={s.window}>
 
         <View style={s.titleBar}>
-          <Text style={s.titleBarText}>👻 add movie — spookies.exe</Text>
+          <Text style={s.titleBarText}>{GHOST} add movie — spookies.exe</Text>
           <View style={s.titleBtns}>
             <View style={s.titleBtn}><Text style={s.titleBtnText}>_</Text></View>
             <View style={s.titleBtn}><Text style={s.titleBtnText}>□</Text></View>
@@ -98,7 +98,7 @@ export default function AddScreen({ navigation }: any) {
             <Text style={s.btnText}>cancel</Text>
           </TouchableOpacity>
           <TouchableOpacity style={[s.btn, s.btnPrimary]} onPress={handleSubmit}>
-            <Text style={[s.btnText, s.btnPrimaryText]}>log it 👻</Text>
+            <Text style={[s.btnText, s.btnPrimaryText]}>log it {GHOST}</Text>
           </TouchableOpacity>
         </View>
 
