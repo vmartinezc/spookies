@@ -15,8 +15,8 @@ export const WIN = {
 
 export const FONT = 'VT323'
 
-export const s = StyleSheet.create({ 
-  
+export const s = StyleSheet.create({
+
   bg: { flex: 1, backgroundColor: WIN.bg },
   container: { padding: 12 },
   window: {
